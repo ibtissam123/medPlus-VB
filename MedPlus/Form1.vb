@@ -19,7 +19,8 @@ Public Class Form1
                 Dim sv As New Form2()
                 sv.Show()
                 Me.Hide()
-            Else
+
+            ElseIf Strings.Equals(Reader(0), txt_ndc.Text) = False And Strings.Equals(Reader(1), txt_mdp.Text) = False Then
                 MessageBox.Show("Nom de Compte ou Mot de Passe Incorrect !", "Erreur")
             End If
         End While

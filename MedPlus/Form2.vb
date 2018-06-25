@@ -25,4 +25,10 @@ Public Class Form2
         sv.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btn_compte_Click(sender As Object, e As EventArgs) Handles btn_compte.Click
+        Dim sv As New Info_Compte()
+        sv.Show()
+        Me.Hide()
+    End Sub
 End Class
